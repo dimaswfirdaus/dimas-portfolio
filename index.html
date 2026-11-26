@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dimas Wisnu Firdaus — Brand Strategy & Creative Marketing professional. Explore brand campaigns, product launches, event marketing and creative work.">
+  <meta name="theme-color" content="#17191f">
+  <title>Dimas Wisnu Firdaus | Brand Strategy & Creative Marketing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#17191f;--cream:#f7f3ea;--blue:#4056e8;--lime:#d8f36a;--coral:#ff765e;--muted:#69707c;--line:rgba(23,25,31,.14);--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.55}
+    a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(247,243,234,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font:700 15px "Space Grotesk";letter-spacing:-.03em}.brand span{color:var(--blue)}
+    .nav-links{display:flex;gap:25px;align-items:center;font-size:12px;font-weight:700;color:#50545e}.nav-links a:hover{color:var(--blue)}
+    .menu-btn{display:none;background:none;border:0;font-size:24px}
+    .hero{background:var(--ink);color:var(--white);overflow:hidden;position:relative}
+    .hero:before{content:"";position:absolute;width:460px;height:460px;border:1px solid rgba(216,243,106,.25);border-radius:50%;right:7%;top:-170px}
+    .hero:after{content:"";position:absolute;width:290px;height:290px;border:1px solid rgba(255,118,94,.45);border-radius:50%;right:16%;bottom:-190px}
+    .hero-grid{min-height:650px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:40px;padding:70px 0;position:relative;z-index:1}
+    .eyebrow{font-size:11px;font-weight:800;letter-spacing:.17em;text-transform:uppercase;color:var(--lime)}
+    h1,h2,h3,p{margin-top:0}h1{font:700 clamp(48px,7vw,88px)/.98 "Space Grotesk";letter-spacing:-.07em;margin:24px 0}
+    h1 em{font-style:normal;color:var(--lime)}.hero-copy{max-width:580px;color:#d0d2d7;font-size:17px}
+    .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:999px;font-size:12px;font-weight:800;transition:.2s}
+    .btn-primary{background:var(--lime);color:var(--ink)}.btn-outline{border:1px solid #727782;color:white}.btn:hover{transform:translateY(-3px)}
+    .hero-photo{position:relative;max-width:420px;justify-self:end}.hero-photo img{width:100%;height:480px;object-fit:cover;object-position:center 35%;border-radius:180px 180px 22px 22px;border:7px solid rgba(255,255,255,.08)}
+    .photo-note{position:absolute;left:-48px;bottom:30px;background:var(--coral);color:var(--ink);padding:13px 17px;border-radius:14px;font-size:11px;font-weight:800;transform:rotate(-5deg)}
+    .ticker{background:var(--lime);overflow:hidden;white-space:nowrap;padding:13px 0;font:700 12px "Space Grotesk";letter-spacing:.12em;color:var(--ink)}
+    .ticker span{padding:0 25px}
+    section{padding:100px 0}.section-kicker{color:var(--blue);font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+    .section-title{font:700 clamp(34px,5vw,58px)/1.03 "Space Grotesk";letter-spacing:-.06em;margin:13px 0 18px}
+    .section-intro{max-width:670px;color:var(--muted);font-size:15px}
+    .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;margin-top:45px;align-items:start}
+    .quote{background:var(--blue);color:white;padding:32px;border-radius:20px;font:600 25px/1.25 "Space Grotesk";letter-spacing:-.04em}
+    .about-copy{font-size:15px;color:#50545e}.pill-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}.pill{padding:8px 12px;border:1px solid var(--line);border-radius:99px;font-size:11px;font-weight:700}
+    .stats{background:#ebe6dc;padding:34px 0}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+    .stat strong{display:block;font:700 38px "Space Grotesk";color:var(--blue);letter-spacing:-.06em}.stat span{font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#555b65}
+    .timeline{margin-top:45px;border-left:2px solid var(--blue);padding-left:28px;display:grid;gap:30px}
+    .job{position:relative}.job:before{content:"";position:absolute;left:-36px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--coral);border:3px solid var(--cream)}
+    .job-top{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.job h3{font:700 20px "Space Grotesk";margin-bottom:3px}.job .role{color:var(--blue);font-size:13px;font-weight:800}.job .date{font-size:11px;font-weight:800;color:var(--muted)}
+    .job ul{padding-left:18px;color:#555b65;font-size:13px;max-width:850px}.job li{margin:7px 0}
+    .projects{background:var(--ink);color:white}.projects .section-intro{color:#b9bec7}.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:42px}
+    .project{background:#252932;border:1px solid #3a404b;border-radius:18px;overflow:hidden;transition:.25s}.project:hover{transform:translateY(-5px);border-color:var(--lime)}
+    .project img{width:100%;height:230px;object-fit:cover;object-position:top}.project-body{padding:23px}.project-type{font-size:10px;font-weight:800;letter-spacing:.14em;color:var(--lime);text-transform:uppercase}
+    .project h3{font:700 22px "Space Grotesk";margin:9px 0}.project p{font-size:13px;color:#c3c7cf;margin-bottom:0}
+    .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:38px}.skill{padding:23px;border:1px solid var(--line);border-radius:15px}.skill h3{font:700 15px "Space Grotesk";margin-bottom:8px}.skill p{font-size:13px;color:var(--muted);margin:0}
+    .education{margin-top:40px;background:var(--blue);color:white;padding:27px;border-radius:17px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.education h3{font:700 19px "Space Grotesk";margin:0 0 5px}.education p{font-size:12px;margin:0;color:#e1e5ff}
+    .contact{background:var(--coral)}.contact-grid{display:flex;justify-content:space-between;align-items:end;gap:40px;flex-wrap:wrap}.contact h2{font:700 clamp(42px,7vw,78px)/.95 "Space Grotesk";letter-spacing:-.07em;margin:15px 0}.contact p{max-width:510px;color:#3d3030}
+    .contact-links{display:grid;gap:12px;font-size:14px;font-weight:800}.contact-links a{text-decoration:underline;text-underline-offset:4px}
+    footer{background:var(--ink);color:#aeb3bd;padding:23px 0;font-size:10px}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+
+    .gallery-section{background:#ebe6dc}
+    .gallery-toolbar{display:flex;gap:9px;flex-wrap:wrap;margin:30px 0 25px}
+    .filter-btn{border:1px solid rgba(23,25,31,.2);background:transparent;color:var(--ink);border-radius:99px;padding:9px 15px;font:700 11px "DM Sans";cursor:pointer;transition:.2s}
+    .filter-btn.active,.filter-btn:hover{background:var(--blue);border-color:var(--blue);color:white}
+    .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .gallery-card{background:var(--cream);border:1px solid rgba(23,25,31,.1);border-radius:15px;overflow:hidden;transition:.25s}
+    .gallery-card:hover{transform:translateY(-5px);box-shadow:0 16px 35px rgba(23,25,31,.12)}
+    .gallery-card[hidden]{display:none}
+    .gallery-card a{display:block}
+    .gallery-card img{width:100%;height:230px;object-fit:cover;background:#ddd}
+    .gallery-caption{padding:17px 18px 19px}
+    .gallery-caption span{display:block;color:var(--blue);font-size:9px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;margin-bottom:7px}
+    .gallery-caption h3{font:700 16px "Space Grotesk";margin:0 0 6px}
+    .gallery-caption p{font-size:11px;color:var(--muted);margin:0}
+    .gallery-note{font-size:11px;color:var(--muted);margin-top:17px}
+    @media(max-width:800px){.gallery-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:520px){.gallery-grid{grid-template-columns:1fr}.gallery-card img{height:240px}}
+
+    /* Click-to-enlarge image viewer */
+    .project img,.gallery-card img{cursor:zoom-in}
+    .image-lightbox{position:fixed;inset:0;z-index:1000;background:rgba(8,10,15,.94);display:none;align-items:center;justify-content:center;padding:34px}
+    .image-lightbox.open{display:flex}
+    .image-lightbox img{max-width:min(94vw,1500px);max-height:88vh;width:auto;height:auto;object-fit:contain;border-radius:10px;box-shadow:0 24px 80px rgba(0,0,0,.45);cursor:default}
+    .lightbox-close{position:absolute;top:18px;right:24px;width:46px;height:46px;border:1px solid rgba(255,255,255,.4);border-radius:50%;background:rgba(255,255,255,.1);color:#fff;font-size:28px;line-height:1;cursor:pointer}
+    .lightbox-close:hover{background:var(--coral);color:var(--ink);border-color:var(--coral)}
+    .lightbox-caption{position:absolute;left:24px;right:24px;bottom:16px;text-align:center;color:#e5e7eb;font-size:12px}
+    body.lightbox-open{overflow:hidden}
+    @media(max-width:600px){.image-lightbox{padding:14px}.image-lightbox img{max-width:96vw;max-height:82vh}.lightbox-close{top:12px;right:12px}}
+    .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:none}
+    @media(max-width:800px){.nav-links{display:none;position:absolute;top:72px;left:0;right:0;background:var(--cream);padding:20px 24px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}.nav-links.open{display:flex}.menu-btn{display:block}
+      .hero-grid{grid-template-columns:1fr;min-height:unset;padding:65px 0}.hero-photo{justify-self:center;width:min(360px,85%);grid-row:1}.hero-photo img{height:390px}.photo-note{left:-25px}.about-grid{grid-template-columns:1fr;gap:28px}.stats-grid{grid-template-columns:repeat(2,1fr);row-gap:25px}.project-grid,.skills-grid{grid-template-columns:1fr}section{padding:72px 0}}
+    @media(max-width:480px){.wrap{width:min(100% - 34px,1160px)}.hero-photo img{height:340px}.hero-copy{font-size:15px}.stats-grid{gap:16px}.stat strong{font-size:31px}.project img{height:185px}.education{padding:22px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.btn,.project{transition:none}}
+  </style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#home">DIMAS<span>.</span>WISNU</a>
+    <button class="menu-btn" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about">ABOUT</a><a href="#experience">EXPERIENCE</a><a href="#projects">PROJECTS</a><a href="#gallery">GALLERY</a><a href="#skills">SKILLS</a><a href="#contact">CONTACT</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <div class="eyebrow">Creative Career Portfolio · 2026</div>
+      <h1>DIMAS WISNU<br><em>FIRDAUS.</em></h1>
+      <div class="eyebrow">Brand Strategy & Creative Marketing</div>
+      <p class="hero-copy">Turning brand objectives into campaigns, content and experiences that connect with people and support business goals.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#projects">EXPLORE MY WORK ↗</a>
+        <a class="btn btn-outline" href="assets/Dimas-Wisnu-Firdaus-Portfolio.pdf" target="_blank" rel="noopener">DOWNLOAD PORTFOLIO ↓</a>
+      </div>
+    </div>
+    <div class="hero-photo reveal">
+      <img src="assets/dimas-profile.jpg" alt="Dimas Wisnu Firdaus at a creative exhibition">
+      <div class="photo-note">STRATEGY · CREATE · DELIVER</div>
+    </div>
+  </div>
+</section>
+<div class="ticker"><span>BRAND STRATEGY ✳ CAMPAIGN MANAGEMENT ✳ PARTNERSHIPS ✳ EVENT MARKETING ✳ CONTENT ✳</span><span>BRAND STRATEGY ✳ CAMPAIGN MANAGEMENT ✳ PARTNERSHIPS ✳ EVENT MARKETING ✳ CONTENT ✳</span></div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-kicker">01 / About me</div>
+    <h2 class="section-title">Curiosity meets<br>execution.</h2>
+    <p class="section-intro">A marketing professional working across brand development, integrated campaigns and creative communication.</p>
+    <div class="about-grid">
+      <div class="quote reveal">“Strong marketing sits at the intersection of clear strategy, relevant creativity and disciplined execution.”</div>
+      <div class="about-copy reveal">
+        <p>Management graduate from President University with a Digital Marketing concentration and a 3.92/4.00 GPA. Experienced in brand management, marketing communication, partnership, event marketing, project management, content marketing and sustainability.</p>
+        <p>I connect brand objectives with practical execution — from product-launch planning and campaign development to partnerships, content systems and performance reporting. My experience spans F&B, consumer goods and automotive environments.</p>
+        <div class="pill-row"><span class="pill">Brand Strategy</span><span class="pill">Integrated Campaigns</span><span class="pill">Partnerships</span><span class="pill">Event Marketing</span><span class="pill">Digital Performance</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat"><strong>30+</strong><span>Social content pieces · Astra</span></div>
+    <div class="stat"><strong>10+</strong><span>Articles authored · Astra</span></div>
+    <div class="stat"><strong>20+</strong><span>Promo documents/month · Sosro</span></div>
+    <div class="stat"><strong>2/day</strong><span>Reels produced · Meorient</span></div>
+  </div>
+</div>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-kicker">02 / Career journey</div>
+    <h2 class="section-title">Experience across<br>brands & industries.</h2>
+    <p class="section-intro">From automotive corporate communications to consumer-brand campaigns, event marketing and creative execution.</p>
+    <div class="timeline">
+      <article class="job reveal">
+        <div class="job-top"><div><h3>Bingxue Indonesia</h3><div class="role">Branding & Partnership</div></div><div class="date">MAY 2026 — PRESENT</div></div>
+        <ul>
+          <li>Lead and coordinate new product launches as Project Manager, aligning cross-functional teams and execution.</li>
+          <li>Develop brand strategies and execute three integrated marketing campaigns to strengthen brand awareness.</li>
+          <li>Build and manage strategic partnerships with external brands, media and business partners.</li>
+          <li>Support content, SEO/GEO initiatives, website performance monitoring and campaign reporting.</li>
+        </ul>
+      </article>
+      <article class="job reveal">
+        <div class="job-top"><div><h3>PT Sinar Sosro Gunung Slamat</h3><div class="role">Event Marketing Supervisor</div></div><div class="date">FEBRUARY — MAY 2026</div></div>
+        <ul>
+          <li>Collaborated with the branding team to execute brand promotion strategies across multiple events each month.</li>
+          <li>Managed and administered 20+ promotional support documents monthly to support smooth event execution.</li>
+          <li>Coordinated with the sales team to support on-ground sales performance and revenue targets at each event.</li>
+        </ul>
+      </article>
+      <article class="job reveal">
+        <div class="job-top"><div><h3>PT Meorient International</h3><div class="role">Social Media Specialist</div></div><div class="date">2025</div></div>
+        <ul>
+          <li>Planned and executed social media content from creative ideation and concept writing through final editing.</li>
+          <li>Produced and managed two Reels per day across six industry sectors featured at the exhibition.</li>
+        </ul>
+      </article>
+      <article class="job reveal">
+        <div class="job-top"><div><h3>PT Mobilitas Digital Indonesia (Astra × Toyota)</h3><div class="role">Marketing / Corporate Communication Intern</div></div><div class="date">SEPTEMBER 2024 — SEPTEMBER 2025</div></div>
+        <ul>
+          <li>Planned, designed and analyzed 30+ Instagram and LinkedIn content pieces and authored 10+ articles.</li>
+          <li>Supported event activations for GJAW 2024, IIMS 2025 and GIIAS 2025.</li>
+          <li>Contributed to the 2024–2025 sustainability roadmap and CSR activities involving 50+ participants.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="wrap">
+    <div class="section-kicker" style="color:var(--lime)">03 / Selected work</div>
+    <h2 class="section-title">Projects with a<br>purpose.</h2>
+    <p class="section-intro">Selected campaigns, performance snapshots and creative work. Project details are presented at a portfolio-summary level.</p>
+    <div class="project-grid">
+      <article class="project reveal"><img src="assets/brand-projects.jpg" alt="Bingxue product and campaign project portfolio page"><div class="project-body"><div class="project-type">Product launch · Campaign</div><h3>Green Grape & Desert Bowl NPL</h3><p>Product-launch planning, campaign communication, giveaway mechanics, store sales ranking, product positioning and Korean-inspired #ngebingsu activation.</p></div></article>
+      <article class="project reveal"><img src="assets/green-grape-performance.jpg" alt="Green Grape website performance report"><div class="project-body"><div class="project-type">Digital performance · Analytics</div><h3>Green Grape Launch Performance</h3><p>17,658 website page views from 1–13 October 2026, reaching 58.86% of the 30,000 monthly target. Page views increased 112.9% on launch day compared with the previous day.</p></div></article>
+      <article class="project reveal"><img src="assets/astra-content.jpg" alt="Astra corporate content and communication work"><div class="project-body"><div class="project-type">Corporate communication · Content</div><h3>Astra × Toyota</h3><p>30+ social content pieces, 10+ authored articles, event activation support and sustainability communication.</p></div></article>
+      <article class="project reveal"><img src="assets/events-leadership.jpg" alt="Event activation and leadership portfolio page"><div class="project-body"><div class="project-type">Event marketing · Activation</div><h3>Events & Brand Experiences</h3><p>Event activation support across GJAW, IIMS and GIIAS, Bingxue grand openings, promotional activities and exhibition environments.</p></div></article>
+    </div>
+  </div>
+</section>
+
+
+<section class="gallery-section" id="gallery">
+  <div class="wrap">
+    <div class="section-kicker">04 / Fieldwork gallery</div>
+    <h2 class="section-title">Work beyond<br>the screen.</h2>
+    <p class="section-intro">A visual record of professional activities across automotive events, brand activations, community programmes and exhibition projects.</p>
+    <div class="gallery-toolbar" role="group" aria-label="Filter gallery by experience">
+      <button class="filter-btn active" data-filter="all" aria-pressed="true">ALL WORK</button>
+      <button class="filter-btn" data-filter="moda" aria-pressed="false">MODA / ASTRA</button>
+      <button class="filter-btn" data-filter="sosro" aria-pressed="false">SINAR SOSRO</button>
+      <button class="filter-btn" data-filter="bingxue" aria-pressed="false">BINGXUE</button>
+    </div>
+    <div class="gallery-grid">
+      <article class="gallery-card reveal" data-category="moda">
+        <a href="assets/gallery/gallery-1-1.png" target="_blank" rel="noopener"><img src="assets/gallery/gallery-1-1.png" loading="lazy" alt="MODA MSIB internship closing ceremony"></a>
+        <div class="gallery-caption"><span>MODA / ASTRA · INTERNSHIP</span><h3>MSIB Internship Ceremony</h3><p>Closing ceremony during the internship at MODA, an Astra and Toyota-affiliated company.</p></div>
+      </article>
+      <article class="gallery-card reveal" data-category="moda">
+        <a href="assets/gallery/gallery-1-2.png" target="_blank" rel="noopener"><img src="assets/gallery/gallery-1-2.png" loading="lazy" alt="Visit to Toyota Manufacturing Indonesia"></a>
+        <div class="gallery-caption"><span>MODA / ASTRA · CORPORATE COMMUNICATION</span><h3>Toyota Manufacturing Visit</h3><p>Visit to Toyota Manufacturing Indonesia for company profile video production.</p></div>
+      </article>
+      <article class="gallery-card reveal" data-category="moda">
+        <a href="assets/gallery/gallery-2-1.png" target="_blank" rel="noopener"><img src="assets/gallery/gallery-2-1.png" loading="lazy" alt="MODA booth at automotive exhibition"></a>
+        <div class="gallery-caption"><span>MODA / ASTRA · EVENT MARKETING</span><h3>Automotive Exhibition Activation</h3><p>Event PIC support for major automotive exhibitions in Indonesia, including GIIAS, IIMS and GJAW.</p></div>
+      </article>
+      <article class="gallery-card reveal" data-category="moda">
+        <a href="assets/gallery/gallery-2-2.png" target="_blank" rel="noopener"><img src="assets/gallery/gallery-2-2.png" loading="lazy" alt="MODA internship project review presentation"></a>
+        <div class="gallery-caption"><span>MODA / ASTRA · PROJECT REVIEW</span><h3>Internship Project Review</h3><p>Project presentation and review session during the MODA internship.</p></div>
+      </article>
+      <article class="gallery-card reveal" data-category="sosro">
+        <a href="assets/gallery/gallery-3-1.png" target="_blank" rel="noopener"><img src="assets/gallery/gallery-3-1.png" loading="lazy" alt="Illustrated Ramadan event supported by Sosro in Jakarta"></a>
+        <div class="gallery-caption"><span>SINAR SOSRO · EVENT SUPPORT</span><h3>Illustrated Ramadan — Jakarta</h3><p>Event support for the Illustrated Ramadan programme, March 2026.</p></div>
+      </article>
+      <article class="gallery-card reveal" data-category="sosro">
+        <a href="assets/gallery/gallery-3-2.png" target="_blank" rel="noopener"><img src="assets/gallery/gallery-3-2.png" loading="lazy" alt="Safari Dongeng Ramadan at Istiqlal Mosque"></a>
+        <div class="gallery-caption"><span>SINAR SOSRO · COMMUNITY EVENT</span><h3>Safari Dongeng Ramadan</h3><p>Brand support at Istiqlal Mosque, March 2026.</p></div>
+      </article>
+      <article class="gallery-card reveal" data-category="sosro">
+        <a href="assets/gallery/gallery-4-1.png" target="_blank" rel="noopener"><img src="assets/gallery/gallery-4-1.png" loading="lazy" alt="Sosro preparation and event at Java Jazz Festival"></a>
+        <div class="gallery-caption"><span>SINAR SOSRO · FESTIVAL ACTIVATION</span><h3>Java Jazz Festival Preparation</h3><p>Event preparation and brand support for Java Jazz Festival, 2026.</p></div>
+      </article>
+      <article class="gallery-card reveal" data-category="sosro">
+        <a href="assets/gallery/gallery-4-2.png" target="_blank" rel="noopener"><img src="assets/gallery/gallery-4-2.png" loading="lazy" alt="Prima support at Piring Terbang competition in Bali"></a>
+        <div class="gallery-caption"><span>PRIMA · EVENT SUPPORT</span><h3>Piring Terbang Competition — Bali</h3><p>Prima brand support at the Piring Terbang competition in Bali, April 2026.</p></div>
+      </article>
+      <article class="gallery-card reveal" data-category="bingxue">
+        <a href="assets/gallery/gallery-5-1.png" target="_blank" rel="noopener"><img src="assets/gallery/gallery-5-1.png" loading="lazy" alt="Bingxue booth at Esa Unggul University new student admission event"></a>
+        <div class="gallery-caption"><span>BINGXUE · OPEN BOOTH</span><h3>Esa Unggul Student Admission</h3><p>Bingxue booth activation in Tangerang, August 2026.</p></div>
+      </article>
+      <article class="gallery-card reveal" data-category="bingxue">
+        <a href="assets/gallery/gallery-5-2.png" target="_blank" rel="noopener"><img src="assets/gallery/gallery-5-2.png" loading="lazy" alt="Bingxue booth at Trans7 Weekend Project anniversary event"></a>
+        <div class="gallery-caption"><span>BINGXUE · EVENT ACTIVATION</span><h3>Trans7 Weekend Project</h3><p>Bingxue booth activation at the Trans7 anniversary Weekend Project, October 2026.</p></div>
+      </article>
+    </div>
+    <p class="gallery-note">Gallery photographs and activity descriptions are based on the supplied portfolio gallery PDF. Select an image to view it at full size.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-kicker">05 / Capabilities</div>
+    <h2 class="section-title">What I bring<br>to the table.</h2>
+    <div class="skills-grid">
+      <div class="skill"><h3>Brand & Campaign</h3><p>Brand management · Brand strategy · Product launches · Marketing planning · Integrated campaigns</p></div>
+      <div class="skill"><h3>Digital Marketing</h3><p>Content marketing · Social media · Google Trends · SEO/GEO · Website analytics</p></div>
+      <div class="skill"><h3>Partnerships & Events</h3><p>Partnership · Event marketing · Sponsorship · KOL coordination · Stakeholder coordination</p></div>
+      <div class="skill"><h3>Analysis & Delivery</h3><p>KPI tracking · Project management · Performance reporting · Critical problem-solving</p></div>
+      <div class="skill"><h3>Creative Production</h3><p>Copywriting · Graphic design · Adobe Photoshop · Adobe Illustrator · Video editing · Photography</p></div>
+      <div class="skill"><h3>Tools</h3><p>Microsoft Excel · Canva · CapCut · Inkscape · Microsoft Teams · Outlook</p></div>
+    </div>
+    <div class="education">
+      <div><div class="eyebrow">Education</div><h3>President University</h3><p>Bachelor of Management · Digital Marketing · August 2022 – September 2025</p></div>
+      <div><div class="eyebrow">Academic achievement</div><h3>GPA 3.92 / 4.00</h3><p>BNSP Digital Marketing Competency Test (2024)</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div><div class="eyebrow" style="color:#4b3130">06 / Contact</div><h2>LET’S MAKE<br>GOOD WORK.</h2><p>Interested in opportunities across brand management, integrated marketing, campaign strategy and marketing communications.</p></div>
+    <div class="contact-links">
+      <a href="mailto:dimaswisnufirdaus18@gmail.com">dimaswisnufirdaus18@gmail.com ↗</a>
+      <a href="tel:+6281212661576">+62 812 1266 1576 ↗</a>
+      <a href="https://www.linkedin.com/in/dimas-wisnu-firdaus-221951253/" target="_blank" rel="noopener">LinkedIn Profile ↗</a>
+      <a href="assets/Dimas-Wisnu-Firdaus-Portfolio.pdf" target="_blank" rel="noopener">Download PDF Portfolio ↗</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap footer-inner"><span>© 2026 Dimas Wisnu Firdaus</span><span>BRAND STRATEGY · CREATIVE MARKETING · INDONESIA</span></div></footer>
+
+<div class="image-lightbox" id="imageLightbox" role="dialog" aria-modal="true" aria-label="Expanded portfolio image">
+  <button class="lightbox-close" type="button" aria-label="Close enlarged image">×</button>
+  <img src="" alt="">
+  <div class="lightbox-caption"></div>
+</div>
+
+<script>
+
+  // Open project and gallery images in an accessible full-screen lightbox.
+  const lightbox=document.getElementById('imageLightbox');
+  const lightboxImage=lightbox.querySelector('img');
+  const lightboxCaption=lightbox.querySelector('.lightbox-caption');
+  const lightboxClose=lightbox.querySelector('.lightbox-close');
+  let previousFocus=null;
+  function openLightbox(image){
+    previousFocus=document.activeElement;
+    lightboxImage.src=image.currentSrc||image.src;
+    lightboxImage.alt=image.alt||'Enlarged portfolio image';
+    lightboxCaption.textContent=image.alt||'';
+    lightbox.classList.add('open');
+    document.body.classList.add('lightbox-open');
+    lightboxClose.focus();
+  }
+  function closeLightbox(){
+    lightbox.classList.remove('open');
+    document.body.classList.remove('lightbox-open');
+    lightboxImage.src='';
+    if(previousFocus) previousFocus.focus();
+  }
+  document.querySelectorAll('.project img,.gallery-card img').forEach(image=>{
+    image.setAttribute('tabindex','0');
+    image.setAttribute('role','button');
+    image.setAttribute('aria-label',(image.alt||'Portfolio image')+' — click to enlarge');
+    image.addEventListener('click',event=>{
+      event.preventDefault();
+      event.stopPropagation();
+      openLightbox(image);
+    });
+    image.addEventListener('keydown',event=>{
+      if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(image);}
+    });
+  });
+  lightboxClose.addEventListener('click',closeLightbox);
+  lightbox.addEventListener('click',event=>{if(event.target===lightbox)closeLightbox();});
+  document.addEventListener('keydown',event=>{
+    if(event.key==='Escape'&&lightbox.classList.contains('open'))closeLightbox();
+  });
+
+  const menuButton=document.querySelector('.menu-btn');
+  const nav=document.querySelector('.nav-links');
+  menuButton.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.textContent=open?'×':'☰';});
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.textContent='☰';}));
+
+  const filterButtons=document.querySelectorAll('.filter-btn');
+  const galleryCards=document.querySelectorAll('.gallery-card');
+  filterButtons.forEach(button=>button.addEventListener('click',()=>{
+    const filter=button.dataset.filter;
+    filterButtons.forEach(b=>{const active=b===button;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});
+    galleryCards.forEach(card=>{card.hidden=filter!=='all'&&card.dataset.category!==filter;});
+  }));
+  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
